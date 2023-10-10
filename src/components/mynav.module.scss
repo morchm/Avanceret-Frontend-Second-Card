@@ -1,0 +1,29 @@
+#menuContainer {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: calc(2em + 2vw);
+  background-color: #000;
+  justify-content: center;
+
+  ul {
+    display: grid;
+    grid-auto-flow: column;
+    margin: calc(1em + 1vw);
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    li {
+      padding-left: 10px;
+      padding-right: 10px;
+      border-right: 3px #fff solid;
+      font-family: "Courier New", Courier, monospace;
+      font-size: calc(0.8em + 0.8vw);
+      font-weight: bold;
+      cursor: pointer;
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}
